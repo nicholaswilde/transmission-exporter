@@ -67,5 +67,6 @@ Now simply copy the `.env.example` to `.env`, like `cp .env.example .env` and se
 Now you're good to go.
 
 ### Original authors of the Transmission package  
+Matthias Loibl (https://github.com/metalmatze/transmission-exporter)
 Tobias Blom (https://github.com/tubbebubbe/transmission)  
 Long Nguyen (https://github.com/longnguyen11288/go-transmission)
