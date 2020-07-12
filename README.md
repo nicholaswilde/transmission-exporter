@@ -66,6 +66,8 @@ For development we encourage you to use `make install` instead, it's faster.
 Now simply copy the `.env.example` to `.env`, like `cp .env.example .env` and set your preferences.
 Now you're good to go.
 
+You may also specify the location of the `.env` file with the `--envpath` command line argument. 
+
 ### Original authors of the Transmission package  
 Matthias Loibl (https://github.com/metalmatze/transmission-exporter)
 Tobias Blom (https://github.com/tubbebubbe/transmission)  
