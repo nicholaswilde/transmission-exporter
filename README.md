@@ -7,7 +7,7 @@ Prometheus exporter for [Transmission](https://transmissionbt.com/) metrics, wri
 
 ### Installation
 
-    $ go get github.com/metalmatze/transmission-exporter
+    $ go get github.com/nicholaswilde/transmission-exporter
 
 ### Configuration
 
@@ -21,12 +21,12 @@ ENV Variable | Description
 
 ### Docker
 
-    docker pull metalmatze/transmission-exporter
-    docker run -d -p 19091:19091 metalmatze/transmission-exporter
+    docker pull nicholaswilde/transmission-exporter
+    docker run -d -p 19091:19091 nicholaswilde/transmission-exporter
 
 ### Kubernetes (Prometheus)
 
-A sample kubernetes manifest is available in [example/kubernetes](https://github.com/metalmatze/transmission-exporter/blob/master/examples/kubernetes/docker-compose.yml)
+A sample kubernetes manifest is available in [example/kubernetes](https://github.com/nicholaswilde/transmission-exporter/blob/master/examples/kubernetes/docker-compose.yml)
 
 Please run: `kubectl apply -f examples/kubernetes/transmission.yml`
 
@@ -48,7 +48,7 @@ Example `docker-compose.yml` with Transmission also running in docker.
         - "51413:51413"
         - "51413:51413/udp"
     transmission-exporter:
-      image: metalmatze/transmission-exporter
+      image: nicholaswilde/transmission-exporter
       restart: always
       links:
         - transmission
